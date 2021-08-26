@@ -41,7 +41,7 @@
   (discord-ws/disconnect-bot! gateway)
   (close! events))
 
-(defn -main [& args]
+(defn -main [& _args]
   (reset! state (start-bot! (:token config) :guild-messages))
   (reset! bot-id (:id @(discord-rest/get-current-user! (:rest @state))))
   (try
