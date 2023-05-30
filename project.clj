@@ -1,4 +1,4 @@
-(defproject discljord/lein-template "0.1.1"
+(defproject discljord/lein-template "0.2.0"
   :description "A leiningen template for discljord projects."
   :url "https://github.com/johnnyjayjay/discljord-template"
   :license {:name "MIT"
