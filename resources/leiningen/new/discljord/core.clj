@@ -51,7 +51,7 @@
   (close! events))
 
 (defn -main [& args]
-  (reset! state (start-bot! (:token config) :guild-messages))
+  (reset! state (start-bot! (:token config)))
   (reset! bot-id (:id @(discord-rest/get-current-user! (:rest @state))))
   (try
     (message-pump! (:events @state) handle-event)
