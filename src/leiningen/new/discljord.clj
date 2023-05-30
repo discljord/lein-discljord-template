@@ -32,7 +32,6 @@
              ["config.edn" (render "config.edn")]
              "resources"
              [".gitignore" (render ".gitignore")]
-             [".hgignore" (render ".hgignore")]
              ["LICENSE" (render "LICENSE")]
              ["README.md" (render "README.md" data)])))
 
