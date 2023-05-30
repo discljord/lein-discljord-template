@@ -31,7 +31,7 @@
              ["project.clj" (render "project.clj" data)]
              ["config.edn" (render "config.edn")]
              "resources"
-             [".gitignore" (render ".gitignore")]
-             ["LICENSE" (render "LICENSE")]
+             [".gitignore" (render "gitignore")]
+             ["LICENSE" (render "LICENSE" data)]
              ["README.md" (render "README.md" data)])))
 
