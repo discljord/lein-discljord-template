@@ -3,4 +3,5 @@
   :url "https://github.com/johnnyjayjay/discljord-template"
   :license {:name "MIT"
             :url "https://mit-license.org"}
+  :dependencies [[java-http-clj "0.4.3"]]
   :eval-in-leiningen true)

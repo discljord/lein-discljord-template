@@ -3,7 +3,7 @@
   :url "http://example.com/FIXME"
   :license {:name "MIT"
             :url "https://mit-license.org"}
-  :dependencies [[org.clojure/clojure "1.10.1"]
-                 [org.suskalo/discljord "1.3.1"]]
+  :dependencies [[org.clojure/clojure "{{latest-clojure}}"]
+                 [org.suskalo/discljord "{{latest-discljord}}"]]
   :repl-options {:init-ns {{namespace}}}
   :main {{namespace}})
