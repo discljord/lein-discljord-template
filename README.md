@@ -61,7 +61,8 @@ first-bot.core=> (discord-rest/create-message! (:rest bot) "588374933277769728" 
 
 Copyright © 2020, 2023 JohnnyJayJay
 
-This program and the accompanying materials are made available under the
-terms of the MIT License which is available at
+This software and accompanying materials are made available under the terms of the MIT License, which is available at
 https://mit-license.org
 
+For your convenience, the files in `resources/` (which are copied to your project when applying this template) are additionally made available under the terms of the BSD Zero Clause License, which is available at
+https://opensource.org/license/0bsd/

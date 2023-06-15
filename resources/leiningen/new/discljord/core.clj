@@ -1,11 +1,12 @@
-;; SPDX-License-Identifier: MIT
+;; SPDX-License-Identifier: MIT OR 0BSD
 (ns {{namespace}}
-  (:require [clojure.edn :as edn]
-            [clojure.core.async :refer [chan close!]]
-            [discljord.messaging :as discord-rest]
-            [discljord.connections :as discord-ws]
-            [discljord.formatting :refer [mention-user]]
-            [discljord.events :refer [message-pump!]]))
+  (:require
+   [clojure.edn :as edn]
+   [clojure.core.async :refer [chan close!]]
+   [discljord.messaging :as discord-rest]
+   [discljord.connections :as discord-ws]
+   [discljord.formatting :refer [mention-user]]
+   [discljord.events :refer [message-pump!]]))
 
 (def state (atom nil))
 
