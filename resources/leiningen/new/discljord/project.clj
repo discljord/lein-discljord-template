@@ -4,6 +4,6 @@
   :license {:name "FIXME"
             :url "FIXME"}
   :dependencies [[org.clojure/clojure "{{latest-clojure}}"]
-                 [org.suskalo/discljord "{{latest-discljord}}"]]
+                 [com.github.discljord/discljord "{{latest-discljord}}"]]
   :repl-options {:init-ns {{namespace}}}
   :main {{namespace}})
