@@ -1,3 +1,4 @@
 {:token "FIXME"
  :playing "Say hello!"
- :responses ["Hello there" "Good evening" "Good morning" "G'day" "Hi" "Howdy :cowboy:"]}
+ :responses ["Hello there" "Good evening" "Good morning" "G'day" "Hi" "Howdy :cowboy:"]
+ :intents #{:guilds :guild-messages}}
