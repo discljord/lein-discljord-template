@@ -33,7 +33,7 @@
 (defmethod handle-event :default [_ _])
 
 (defn start-bot!
-  "Start a discord bot using the token specified in `config.edn`.
+  "Start a discord bot using the token and intents specified in `config.edn`.
 
   Returns a map containing the event channel (`:events`), the gateway connection (`:gateway`) and the rest connection (`:rest`)."
   [token & intents]
@@ -52,7 +52,7 @@
   (close! events))
 
 (defn -main [& args]
-  (reset! state (start-bot! (:token config)))
+  (reset! state (apply start-bot! (:token config) (:intents config)))
   (reset! bot-id (:id @(discord-rest/get-current-user! (:rest @state))))
   (try
     (message-pump! (:events @state) handle-event)
